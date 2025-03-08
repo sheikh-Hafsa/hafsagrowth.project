@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Corrected: Changed project_icon to icon
+# Set page config with an emoji icon (or you can replace the emoji with a file path to an image)
 st.set_page_config(page_title="Growth Mindset Project", icon="⭐")
 
 st.title("Growth Mindset Challenge: Web App with Streamlit ")
@@ -12,6 +12,7 @@ st.write("Embrace Challenges, learn from mistakes, and unlock your full potentia
 st.header("😇 Today's Growth Mindset Quote")
 st.write("Failure is not fatal, but failing to change might be. - John Wooden")
 
+# Challenge Section
 st.header("🔧 What's Your Challenge Today?")
 user_input = st.text_input("Describe a Challenge You're Facing:")
 
@@ -21,7 +22,7 @@ if user_input:
 else:
     st.warning("Tell us about your challenge to get started.")
 
-# Reflection
+# Reflection Section
 st.header("✅ Reflect on Your Learning")
 reflection = st.text_area("Write your outcome here:")
 
@@ -30,7 +31,7 @@ if reflection:
 else:
     st.info("Reflecting on past experiences helps you grow! Share your difficulties.")
 
-# Achievements
+# Achievements Section
 st.header("Celebrate Your Achievements 🎉")
 achievement = st.text_input("Share something you've recently accomplished:")
 
@@ -39,7 +40,7 @@ if achievement:
 else:
     st.info("Big or small, every achievement counts! Share one now 🤩")
 
-# Footer
+# Footer Section
 st.write("- - -")
 st.write("If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.")
 st.write("**💥 Created By Hafsa Sheikh**")
