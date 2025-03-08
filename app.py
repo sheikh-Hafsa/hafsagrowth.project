@@ -1,7 +1,7 @@
 #streamlit
 import streamlit as st
 
-st.set_page_config(page_title= "growth mindset project", project_icon="★")
+st.set_page_config(page_title= "growth mindset project", page_icon="★")
 st.title("🌱Growth Mindset challenge: web App with Streamlit")
 
 st.header("🚀Welcome to your Growth Journey!")
@@ -36,7 +36,7 @@ st.header("Celebrate Your Achievements🎉")
 achievement = st.text_input("share something you've recently accopmlished")
 
 if achievement:
-    st.suucess(f"🎊Amazing you achieved {achievement}")
+    st.success(f"🎊Amazing you achieved {achievement}")
 else:
     st.info("Big or Small, every achivement counts! Share One Now🤩")
 
