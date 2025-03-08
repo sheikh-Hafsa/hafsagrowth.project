@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page config with an emoji icon (or you can replace the emoji with a file path to an image)
-st.set_page_config(page_title="Growth Mindset Project", icon="⭐")
+st.set_page_config(page_title="Growth Mindset Project", icon="★")
 
 st.title("Growth Mindset Challenge: Web App with Streamlit ")
 
