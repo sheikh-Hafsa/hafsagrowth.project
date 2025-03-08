@@ -1,46 +1,45 @@
-
-#streamlit
 import streamlit as st
-st.set_page_config(page_title= "growth mindset project", project_icon="⭐")
-st.title("Growth Mindset challenge: web App with Streamlit ")
 
-st.header("🚀Welcome to your Growth Journey!")
-st.write("Embrace Challenges, learn from mistakes, and unlock your full potential. this AI-powered app helps you build a growth mindset with reflection, challenges and achievements!💎 ")
+# Corrected: Changed project_icon to icon
+st.set_page_config(page_title="Growth Mindset Project", icon="⭐")
 
-#quotes
-st.header("😇 Todays Growth Mindset Quote")
-st.write("Failure is not fatal, but failing to change might be. - John Wooden ")
+st.title("Growth Mindset Challenge: Web App with Streamlit ")
 
-st.header("🔧What's Your Challenge Today?")
+st.header("🚀 Welcome to Your Growth Journey!")
+st.write("Embrace Challenges, learn from mistakes, and unlock your full potential. This AI-powered app helps you build a growth mindset with reflection, challenges, and achievements! 💎")
+
+# Quotes
+st.header("😇 Today's Growth Mindset Quote")
+st.write("Failure is not fatal, but failing to change might be. - John Wooden")
+
+st.header("🔧 What's Your Challenge Today?")
 user_input = st.text_input("Describe a Challenge You're Facing:")
 
-#condition
+# Condition for challenge input
 if user_input:
-    st.success(f" you're facing: {user_input}. keep pushing forward towards your goals!🚀")
-
+    st.success(f"You're facing: {user_input}. Keep pushing forward towards your goals! 🚀")
 else:
-    st.warning("tell us about your challenge to get started")
+    st.warning("Tell us about your challenge to get started.")
 
-#Reflexing
-st.header("✅ Reflect on your learning")
-reflection = st.text_area("write your outcome here:")
+# Reflection
+st.header("✅ Reflect on Your Learning")
+reflection = st.text_area("Write your outcome here:")
 
 if reflection:
-    st.success(f"⭐ Great Insight! your reflection: {reflection}")
-
+    st.success(f"⭐ Great Insight! Your reflection: {reflection}")
 else:
-    st.info("Reflecting on past experience help you grow! share your difficulties")
+    st.info("Reflecting on past experiences helps you grow! Share your difficulties.")
 
-#achievements
-st.header("Celebrate Your Achievements🎉")
-achievement = st.text_input("share something you've recently accopmlished")
+# Achievements
+st.header("Celebrate Your Achievements 🎉")
+achievement = st.text_input("Share something you've recently accomplished:")
 
 if achievement:
-    st.success(f"🎊Amazing you achieved {achievement}")
+    st.success(f"🎊 Amazing! You achieved: {achievement}")
 else:
-    st.info("Big or Small, every achivement counts! Share One Now🤩")
+    st.info("Big or small, every achievement counts! Share one now 🤩")
 
-#footer
+# Footer
 st.write("- - -")
-st.write("If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success")
-st.write("**💥Created By Hafsa Sheikh**")
+st.write("If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.")
+st.write("**💥 Created By Hafsa Sheikh**")
