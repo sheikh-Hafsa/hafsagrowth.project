@@ -1,7 +1,7 @@
 #streamlit
 import streamlit as st
 
-st.set_page_config(page_title= "growth mindset project", project_icon="⭐")
+st.set_page_config(page_title= "growth mindset project", icon="⭐")
 st.title("🌱Growth Mindset challenge: web App with Streamlit ")
 
 st.header("🚀Welcome to your Growth Gourney!")
@@ -26,7 +26,7 @@ st.header("✅ Reflect on your learning")
 reflection = st.text_area("write your outcome here:")
 
 if reflection:
-    st.sucess(f"⭐ Great Insight! your reflection: {reflection}")
+    st.success(f"⭐ Great Insight! your reflection: {reflection}")
 
 else:
     st.info("Reflecting on past experience help you grow! share your difficulties")
